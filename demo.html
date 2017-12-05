@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HUD Demo</title>
+	<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+	<script src="js/classes/marker.js"></script>
+	<script src="js/components/tracker.js"></script>
+	<script src="js/components/hud.js"></script>
+</head>
+<body>
+	<a-scene>
+		
+		<!--USER-->
+		<a-camera
+			fov="60">
+			<a-hud
+				tracker="track: .red_box">
+			</a-hud>
+		</a-camera>
+
+
+		<!--ENVIRONMENT -->
+		<a-plane
+			class="monkey"
+			rotation="-90 0 0"
+			height="100"
+			width="100"
+			color="#ccc">
+		</a-plane>
+		<a-box 
+			class="red_box"
+			color="red"
+			position="0 0.5 -5">
+		</a-box>
+	</a-scene>
+</body>
+</html>
