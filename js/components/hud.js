@@ -3,7 +3,7 @@
 		1. 	create + expose functionality to toggle HUD components via keyboard shortcuts
 		2. 	zoom hud components
 		3. 	move canvas dims sync out of tick and into some event handlers; maybe do a throttled
-			tick every second or so for backup only.
+			tick every second or so for backup only...
 */
 
 AFRAME.registerPrimitive("a-hud", {
